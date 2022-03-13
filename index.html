@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAD/EAAA/0AAAP9AAAD/cAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/QAAA/0AAAP8Q////AP///wD///8AAAD/YAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/2D///8AAAD/MAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD/MAAA/1AAAP//AAD//wAA//8AAP//AAD//wAA//8QEP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/2AAAP+AAAD//wAA//8AAP//AAD//wAA//8AAP//4OD//1BQ//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP+AAAD/gAAA//8AAP//AAD//wAA//8AAP//AAD/////////////wMD//yAg//8AAP//AAD//wAA//8AAP//AAD/gAAA/4AAAP//AAD//wAA//8AAP//AAD//wAA/////////////7Cw//8gIP//AAD//wAA//8AAP//AAD//wAA/4AAAP+AAAD//wAA//8AAP//AAD//wAA//8AAP//4OD//0BA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP+AAAD/UAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD/YAAA/zAAAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/zD///8AAAD/YAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA/2D///8A////AP///wAAAP8QAAD/QAAA/0AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP9AAAD/QAAA/xD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A//8AAP//AADAAwAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAMADAAD//wAA//8AAA==">
+    
+  <link rel="stylesheet" href="/assets/index.ecbe2c30.css">
+</head>
+<body>
+    <div class="navbar hidden md:block">
+        <nav class="fixed z-40 md:w-[100%] flex flex-row md:justify-between md:items-center md:flex-row bg-white md:h-16 md:px-5">
+            <div class="left md:flex md:justify-center md:items-center md:flex-row md:space-x-3">
+                <div class="hamburger z-30 active:bg-gray-100 md:transition-all md:border-none md:rounded-full">
+                    <i class="fas fa-bars md:p-3 cursor-pointer md:text-[16px] text-[12px]"  id="btn" onclick="clicked()"></i>
+                </div>
+                <img src="/assets/ytlogo.efe0d5de.png" class="md:w-[150px] cursor-pointer" alt="YouTube_Logo">
+            </div>
+            <div class="middle md:flex md:justify-center md:items-center md:flex-row md:space-x-4">
+                <div class="search outline-none">
+                    <input type="text" placeholder="Search" class="md:h-8 2xl:w-[38rem] xl:[30rem] lg:w-[36rem] md:w-[19rem] md:px-3 md:py-3 border-none md:border-[1px] md:border-solid md:border-gray-600 focus:outline-none focus:border-blue-600 focus:border-solid focus:shadow-sm">
+                    <i class="fas fa-search md:text-[16px] text-[12px]  md:px-[16px] md:py-[2px] cursor-pointer"></i>
+                </div>
+                <i class="fas fa-microphone cursor-pointer md:text-[16px] text-[12px]"></i>
+            </div>
+            <div class="end md:flex md:justify-between md:items-center md:flex-row md:space-x-5">
+                <a href=""><i class="fas fa-video cursor-pointer md:text-[16px] text-[12px]"></i></a>
+                <a href=""><i class="fas fa-ellipsis-v cursor-pointer md:text-[16px] text-[12px]"></i></a>
+                <a href=""><i class="fas fa-bell cursor-pointer md:text-[16px] text-[12px]"></i></a>
+                <a href=""><i class="fas fa-user-circle cursor-pointer md:text-[16px] text-[12px]"></i></a>
+            </div>
+        </nav>
+    </div>
+    <nav class="md:hidden flex justify-between items-center relative px-1 py-1 h-12 w-[100%]">
+        <div class="logo">
+            <img src="/assets/ytlogo.efe0d5de.png" class="w-[97px]" alt="YouTube_Logo">
+        </div>
+        <div class="icons space-x-2">
+            <a href=""><i class="fas fa-wifi cursor-pointer"></i></a>
+            <a href=""><i class="fas fa-bell cursor-pointer"></i></a>
+            <a href=""><i class="fas fa-search cursor-pointer"></i></a>
+            <a href=""><i class="fas fa-user-circle cursor-pointer"></i></a>
+        </div>
+    </nav>
+    <div class="main mb-5 md:mb-0 md:h-[100%] md:w-[100%] md:absolute">
+        <div class="sidenav md:w-60 fixed hidden md:block" id="sideNav" >
+            <div class="links flex md:justify-center md:items-start md:my-[60px] md:px-1 md:py-3 md:flex-col">
+                <a href="" class="w-[100%] h-[100%] md:py-[12px] hover:cursor-pointer hover:bg-gray-200 md:text-[14px] md:bg-gray-100" id="link"><i class="fas fa-home md:mx-5"></i><span class="font-normal"><b>Home</b></span></a>
+                <a href="" class="w-[100%] h-[100%] md:py-[12px] hover:cursor-pointer hover:bg-gray-100 md:text-[14px]" id="link"><i class="far fa-compass md:mx-5"></i><span class="font-normal">Explore</span></a>
+                <a href="" class="w-[100%] h-[100%] md:py-[12px] hover:cursor-pointer hover:bg-gray-100 md:text-[14px]" id="link"><i class="fab fa-youtube-square md:mx-5"></i><span class="font-normal">Shorts</span></a>
+                <a href="" class="w-[100%] h-[100%] md:py-[12px] hover:cursor-pointer hover:bg-gray-100 md:text-[14px]" id="link"><i class="fas fa-photo-video md:mx-5"></i><span class="font-normal">Subscription</span></a>
+                <hr class="text-gray-500 w-[100%] md:my-5">
+                <a href="" class="w-[100%] h-[100%] md:py-[12px] hover:cursor-pointer hover:bg-gray-100 md:text-[14px]" id="link"><i class="fas fa-film md:mx-5"></i><span class="font-normal">Library</span></a>
+                <a href="" class="w-[100%] h-[100%] md:py-[12px] hover:cursor-pointer hover:bg-gray-100 md:text-[14px]" id="link"><i class="fas fa-history md:mx-5"></i><span class="font-normal hiddenLinks">History</span></a>
+                <a href="" class="w-[100%] h-[100%] md:py-[12px] hover:cursor-pointer hover:bg-gray-100 md:text-[14px]" id="link"><i class="fas fa-clock md:mx-5"></i><span class="font-normal">Watch Later</span></a>
+            </div>
+        </div>
+        <div class="mainContents z-50 md:z-0 2xl:w-[1109px] xl:w-[1109px] lg:w-[870px] relative md:my-[42px] md:px-5 md:py-5 md:absolute md:right-0 md:w-[600px] md:h-[100%] bg-white" id="mainContents">
+            <h1 class="md:px-2 md:py-2 px-3 py-2 relative md:text-3xl bg-white z-50 md:text-black md:fixed w-[100%]">Recommanded</h1>
+            <hr class="md:my-3">
+            <div class="cards md:justify-start items-center flex-col flex md:items-start md:flex-row md:flex-wrap">
+                <a href="https://youtu.be/x9l2VRJ5-3k">
+                    <div class="card cursor-pointer md:mt-16 md:w-[20rem] md:h-[18rem] my-5 mx-2 ">
+                        <div class="">
+                            <img src="/assets/song1.dc6d22c5.jpg" class="hover:opacity-95" alt="">
+                        </div>
+                        <div class="my-2 flex md:justify-between md:items-start md:flex-row">
+                            <div class="logo mx-1 md:w-[51px] md:rounded-full w-[51px] rounded-full">
+                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoXDAsKCwsNDh4QDQ4RDgsLEBYQERMQFRUVDA8XGBYdGBIUGxkBAwQEBQUGCQYGChANCw0UExQSDhAQEBAUFBQQDhQREhIREw8SEw4SFA8TEBAOEg8OEhQNEQ8PEw4SEhIPDxIPEP/AABEIADAAMAMBEQACEQEDEQH/xAAcAAACAgIDAAAAAAAAAAAAAAAABwQGAQgDBQn/xAAvEAABAwMDAgIJBQAAAAAAAAABAgMEAAURBhITITEHIhQyQUJRYYKRoSQzUnGB/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAQGBwUIAgP/xAAxEQABAwMDAgMGBgMAAAAAAAABAgMRAAQhBRIxIkETUcEGMkJhgZEUcXKh0fEjYrH/2gAMAwEAAhEDEQA/APVOlKKUopSilKKUopSilKwpQQkqUQlIGST2FKVWpPiRpqLdLJb1XeOt+9MuyICmTyNvNtp3qUFp8uNvUEnrg47V+5YcSlalCAjmcR61y1anZpdZa8QbnQSiMghIkkEY4yM57VG0j4pWLWFrgzGJHoipshyKzHlYS4pxAzjAPtTtV9QHc1XLLWrO7bbcSrbvJCUqwSQJ4/Lq84InOKlM3CHUhQq313KlUUpXWanvSdN6au13UjkTAiPSige8EIKsfipNqyX3m2R8RA+5ioN9dC0tnblQkNpUqP0pJ9K1U8W9c6x1PfrJPskd0w7tp9FuXDZfSEc8xgrWOpzkDaoKOP2u/etCsrOyt2nm3T1IXO4jshYA++QR/tWK61qOsXj9s9aJOx5nbsCgBudbUo85wAFA4B2RIk0lIcLVqY1juiWCmDa2G2YziHmyrgffUR5d27zrddSOmTggerXK9pnGfwl6hBO9SF8AzuDcYgdoB/uqjpVnq3jWT5ADbe2DuT7q3FciZ6ipSRiTwMimjZ4N9slwZUmGsGC8iXHTvQUl0I5TjB/g0g/PGO9eRl2N225bkI6gvpGPeAS5590oBOchMc4rfLcOImRxn9v4in34Xaqn2d+VaL01IUTJU4qS84FcSlNcm09faEqV07E/OrB7L6veWazZ6glZ3OK/yKUk7T4Xi7TBnqAUvpwknbjgWhOZ+VNeHLanxGJLC+Rh5CXG14xuSRkH7Gtbt327hpDzRlCwCD5giQfqK+qhaosqdSaau1oUstJnxHopWPdC0FOfzXRtXiw828PhIP2M1BvrUXds7bKMBxKkz+pJHrWrHilpDWujNQWqDp+S4iLb9MplvTWoyFoUuI0Q56wJ6lLWB8VpPcVoFpdWN00648OpTkBJJ4WqRx5Zz8iO9Yzq1lrWnvMMWSyENsSVhKSCWkEHmT1dAA8yDBikjaH9R+m6bjvOOPW+4qjTWWGW0BXDGkLA29PKUlD56EetUTX/AAG7e6cSDKEqmJmSgHGeTgCe9UrS7nUlXNi2syhewgAJ91p1fyEbes47H6U213a8aru6GWZP6aYWrbF2NhKOTj4nNuRuCT6QTgnoHB8BXkW71G6uHmEoX8UJwANxSlsxyoA7yYMkBwdwI9BNlbpPkYH7Z/7Tz8L9OXK9F+5Xt54IakLb9FeZSnkUG9hUTjPTetP+f3nv+zOnX98fxWorUA2tQDakoG4+HsKiQkK6dy04MGOYmbKjE/OmpDiNQIjEZhHGwyhLbac5wkDAH2FarbsN27SGWhCEAADyAEAfQV9VzVIpWFJC0lKgFJIwQexpSq1J8NtNSrrZLgq0MNv2Vl2PASyONtltxOxSQhPlI29ACOmTipBfdUlaVGQvmcz61y1aZZqdZe8MbmgQiMABQggAY4wMY7VG0j4W2HR9rgw2I5lqhSHJTMmVhTiXFjGcgexO1P0g9xVastFs7RttCU7thJSpWSCRHP5dPnAE5zUpm3Q0kJHarfXdqVRSlFKUUpRSlFKUUpRSlf/Z" alt="logo" class="rounded-full w-[40px] md:w-[51px] md:border-none md:rounded-full">
+                            </div>
+                            <div class="para">
+                                <span class="font-bold md:text-[16px] text-[12px]">Aaj Sajeya | Alaya F | Goldie Sohel| Punit M| Trending Wedding...</span>
+                                <div class="name my-2 text-[12px] ">
+                                    <span class="">Arijit Singh, Darshan Raval, Gulshan Kumar and more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://youtu.be/urWwn0MTzb4">
+                    <div class="card cursor-pointer md:mt-16 md:w-[20rem] md:h-[18rem] my-5 mx-2 ">
+                        <div class="">
+                            <img src="/assets/img2.79e59ca8.webp" class="hover:opacity-95" alt="">
+                        </div>
+                        <div class="my-2 flex md:justify-between md:items-start md:flex-row">
+                            <div class="logo mx-1 md:w-[51px] md:rounded-full w-[51px] rounded-full">
+                                <img src="data:image/jpeg;base64,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" alt="logo" class="rounded-full w-[40px] md:w-[51px]md:border-none md:rounded-full">
+                            </div>
+                            <div class="para">
+                                <span class="font-bold md:text-[16px] text-[12px]">All about Programming Language – [Hindi] – Quick...</span>
+                                <div class="name my-2 text-[12px]">
+                                    <span class="">Quick Support <i class="fas fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://youtu.be/VhJcg0ceqJU">
+                    <div class="card cursor-pointer md:mt-16 md:w-[20rem] md:h-[18rem] my-5 mx-2 ">
+                        <div class="">
+                            <img src="/assets/img3.d979f418.webp" class="hover:opacity-95" alt="">
+                        </div>
+                        <div class="my-2 flex md:justify-between md:items-start md:flex-row">
+                            <div class="logo mx-1 md:w-[51px] md:rounded-full w-[51px] rounded-full">
+                                <img src="data:image/jpeg;base64,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" alt="logo" class="rounded-full w-[40px] md:w-[51px]md:border-none md:rounded-full">
+                            </div>
+                            <div class="para">
+                                <span class="font-bold md:text-[16px] text-[12px]">if someone hurt you again and again apj abdul kalam quotes||motivational...</span>
+                                <div class="name text-[12px] my-2">
+                                    <span class="">mounu thoughts <i class="fas fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://youtu.be/f2aocKWrPG8">
+                    <div class="card cursor-pointer md:mt-16 md:w-[20rem] md:h-[18rem] my-5 mx-2 ">
+                        <div class="">
+                            <img src="/assets/img4.2da2575e.webp" class="hover:opacity-95" alt="">
+                        </div>
+                        <div class="my-2 flex md:justify-start md:items-start md:flex-row">
+                            <div class="logo mx-1 md:w-[51px] md:rounded-full w-[51px] rounded-full">
+                                <img src="data:image/jpeg;base64,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" alt="logo" class="rounded-full w-[40px] md:w-[51px] md:border-none md:rounded-full">
+                            </div>
+                            <div class="para">
+                                <span class="font-bold md:text-[16px] text-[12px]">Will a robot take my job? | The Age of A.I.</span>
+                                <div class="name text-[12px] my-2">
+                                    <span class="">YouTube Originals <i class="fas fa-check-circle"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+               <a href="https://youtu.be/n_RDt2LK_tY">
+                <div class="card cursor-pointer md:mt-16 md:w-[20rem] md:h-[18rem] my-5 mx-2">
+                    <div c lass="">
+                        <img src="/assets/img5.43a1677c.webp" class="hover:opacity-95" alt="">
+                    </div>
+                    <div class="my-2 flex md:justify-start md:items-start md:flex-row">
+                        <div class="logo mx-1 w-[40px] md:w-[51px]">
+                            <img src="data:image/jpeg;base64,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" alt="logo" class="rounded-full w-[40px]md:w-[51px] md:border-none md:rounded-full">
+                        </div>
+                        <div class="para">
+                            <span class="font-bold md:text-[16px] text-[12px]">I made PS5 at home</span>
+                            <div class="name text-[12px] my-2">
+                                <span class="">
+                                    Mythpat <i class="fas fa-check-circle"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </a>
+                <a href="https://youtu.be/sNMtjs_wQiE">
+                    <div class="card cursor-pointer md:mt-16 md:w-[20rem] md:h-[18rem] my-5 mx-2 ">
+                        <div class="">
+                            <img src="/assets/img6.d6487031.webp" class="hover:opacity-95" alt="">
+                        </div>
+                        <div class="my-2 flex md:justify-start md:items-start md:flex-row">
+                            <div class="logo mx-1 md:w-[51px] md:rounded-full w-[51px] rounded-full">
+                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QDQRXhpZgAASUkqAAgAAAAEAA4BAgBiAAAAPgAAADEBAgAHAAAAoAAAADsBAgAQAAAApwAAAJiCAgAQAAAAtwAAAAAAAABGdW5ueSBCdXJyb3dpbmcgb3dsIEF0aGVuZSBjdW5pY3VsYXJpYSB0aWx0cyBpdHMgaGVhZCBvdXRzaWRlIGl0cyBidXJyb3cgb24gTWFyY28gSXNsYW5kLCBGbG9yaWRhAEdvb2dsZQBMYWd1bmF0aWMgUGhvdG8ATGFndW5hdGljIFBob3RvAAD/4QMXaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJYTVAgQ29yZSA1LjUuMCI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bXA6Q3JlYXRvclRvb2w9Ikdvb2dsZSI+IDxkYzpkZXNjcmlwdGlvbj4gPHJkZjpBbHQ+IDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+RnVubnkgQnVycm93aW5nIG93bCBBdGhlbmUgY3VuaWN1bGFyaWEgdGlsdHMgaXRzIGhlYWQgb3V0c2lkZSBpdHMgYnVycm93IG9uIE1hcmNvIElzbGFuZCwgRmxvcmlkYTwvcmRmOmxpPiA8L3JkZjpBbHQ+IDwvZGM6ZGVzY3JpcHRpb24+IDxkYzpyaWdodHM+IDxyZGY6QWx0PiA8cmRmOmxpIHhtbDpsYW5nPSJ4LWRlZmF1bHQiPkxhZ3VuYXRpYyBQaG90bzwvcmRmOmxpPiA8L3JkZjpBbHQ+IDwvZGM6cmlnaHRzPiA8ZGM6Y3JlYXRvcj4gPHJkZjpTZXE+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" class="rounded-full w-[40px] md:w-[51px] md:border-none md:rounded-full" alt="logo">
+                            </div>
+                            <div class="para">
+                                <span class="font-bold md:text-[16px] text-[12px]">C vs C++ vs C#</span>
+                                <div class="name text-[12px] my-2">
+                                    <span class="">conaticus <i class="fas fa-check-circle"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="md:hidden z-50 flex justify-center items-end fixed bottom-0 w-[100%]">
+        <div class="flex w-[100%] bg-white h-[47px] justify-between items-center">
+            <a href=""><i class="fas fa-home mx-2"></i></a>
+            <a href=""><i class="fab fa-youtube-square mx-2"></i></a>
+            <a href=""><i class="fas fa-plus mx-2"></i></a>
+            <a href=""><i class="fas fa-photo-video mx-2"></i></a>
+            <a href=""><i class="fas fa-film mx-2"></i></a>
+        </div>
+    </nav>
+
+    <script>
+        let btn = document.getElementById('btn');
+        let sideNav = document.getElementById('sideNav');
+
+        function clicked(){
+            
+            if(sideNav.style.width == '15rem'){
+                document.getElementById('sideNav').style.width = '6rem';
+                document.getElementById('sideNav').style.textAlign = 'center';
+            }
+            else{
+                document.getElementById('sideNav').style.width = '15rem'; 
+                document.getElementById('sideNav').style.textAlign = 'left';
+            }
+
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/dbe8e1aeca.js" crossorigin="anonymous"></script>
+</body>
+</html>
