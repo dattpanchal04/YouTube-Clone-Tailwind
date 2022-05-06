@@ -3,6 +3,12 @@
 
 Hi dear, I created one YouTube Clone which is also a responsive using HTML, Tailwind CSS and JavaScript. To practice the Tailwind CSS i created this clone. You can also see this clone in your mobile phone. I gave my 100% to build this clone to same as Microsoft. So, checkout this amazing clone. Thank you for visit !!
 
+- Project Preview
+
+![ytclone](https://user-images.githubusercontent.com/94067118/167080428-ed394036-e500-44f5-979b-8561c5013cea.jpg)
+
+- See the project online here: https://vixtube.netlify.app/
+
 ## Authors
 
 - [@dattpanchal04](https://github.com/dattpanchal04)
